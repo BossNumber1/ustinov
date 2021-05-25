@@ -5,6 +5,7 @@ import vk from "./vk.png";
 import insta from "./insta.png";
 import twt from "./twt.png";
 import yt from "./yt.png";
+import twit from "./twit.png";
 
 import styles from "../styles/Home.module.css";
 
@@ -47,6 +48,8 @@ export default function Home() {
                     <div className="mt-4 mb-5">
                         <b>Welcome</b>
                     </div>
+
+                    <img src={twit} alt="post in twitter" />
                 </div>
             </main>
             <footer style={{ marginLeft: 495, marginTop: 40 }}>
