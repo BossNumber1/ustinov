@@ -140,7 +140,7 @@ export default function Home() {
 
                 <div
                     style={{
-                        marginTop: 440,
+                        marginTop: 280,
                     }}
                 >
                     <div className="mt-4" style={{ marginBottom: 10 }}>
