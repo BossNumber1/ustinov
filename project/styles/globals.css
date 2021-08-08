@@ -37,3 +37,24 @@ a {
     grid-area: rightBlock;
     /* background-color: orange; */
 }
+
+.firstIll {
+    width: 360px;
+    height: 512px;
+}
+
+.firstIll img {
+    width: 360px;
+    height: 512px;
+}
+
+.twitIll {
+    width: 170px;
+    height: 110px;
+    /* overflow: hidden; */
+}
+
+.twitIll img {
+    width: 170px;
+    height: 110px;
+}

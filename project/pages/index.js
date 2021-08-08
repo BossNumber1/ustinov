@@ -19,6 +19,8 @@ import eight from "./about/8.jpg";
 
 import signa from "./about/signa.jpg";
 
+import firstIll from "./illustrations/1.jpg";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -221,11 +223,17 @@ export default function Home() {
                                         другой город ☺
                                     </p>
                                 </div>
+                                <div className="twitIll">
+                                    <img src={twit} alt="post in twitter" />
+                                </div>
                             </div>
                             <div className="rightBlock">
-                                <img src={twit} alt="post in twitter" />
-
-                                <div>
+                                <div
+                                    style={{
+                                        float: "left",
+                                        marginLeft: 100,
+                                    }}
+                                >
                                     <b>Самый свежий стих</b>
                                     <br />
                                     <br />
@@ -261,6 +269,20 @@ export default function Home() {
                                     долгу перед тобой, моя родная... <br />
                                     <br /> И, как бы не меняли нас года, <br />
                                     тебя ни на кого не променяю!
+                                </div>
+                                <div className="firstIll">
+                                    <img
+                                        src={firstIll}
+                                        alt="first_illustrations"
+                                        // style={{
+                                        //     // maxWidth: "100%",
+                                        //     // height: "auto",
+                                        //     // marginTop: 122,
+                                        //     zIndex: -1,
+                                        //     float: "left",
+                                        //     marginRight: 5,
+                                        // }}
+                                    />
                                 </div>
                             </div>
                         </div>
