@@ -41,6 +41,12 @@ a {
 .firstIll {
     width: 360px;
     height: 512px;
+    margin-top: 20px;
+    margin-left: 35%;
+    /* display: "flex";
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
 }
 
 .firstIll img {
