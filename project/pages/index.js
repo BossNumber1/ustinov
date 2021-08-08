@@ -205,7 +205,7 @@ export default function Home() {
                                 </div>
                                 <div
                                     style={{
-                                        position: "absolute",
+                                        // position: "absolute",
                                         top: 130,
                                         left: 130,
                                     }}
