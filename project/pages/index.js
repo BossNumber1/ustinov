@@ -307,22 +307,35 @@ export default function Home() {
 
                                     // }}
                                     >
-                                        <b>Ах!</b>
-                                        <br />
-                                        <br />
                                         {isShowVerse ? (
                                             <>
-                                                <input
-                                                    type="submit"
+                                                <button
                                                     onClick={hidePost}
-                                                    value="Скрыть стих"
                                                     className="btn btn-warning"
-                                                />
+                                                >
+                                                    Скрыть стих
+                                                </button>{" "}
                                                 <div
-                                                    dangerouslySetInnerHTML={{
-                                                        __html: verseStore.content,
+                                                    style={{
+                                                        backgroundColor:
+                                                            "white",
                                                     }}
-                                                ></div>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            fontWeight: "bold",
+                                                            marginBottom: 10,
+                                                            paddingTop: 10,
+                                                        }}
+                                                    >
+                                                        Ах!
+                                                    </div>
+                                                    <div
+                                                        dangerouslySetInnerHTML={{
+                                                            __html: verseStore.content,
+                                                        }}
+                                                    />
+                                                </div>
                                             </>
                                         ) : (
                                             <div
@@ -337,12 +350,14 @@ export default function Home() {
                                             </div>
                                         )}
                                     </div>
-                                    <div className="firstIll">
-                                        <img
-                                            src={firstIll}
-                                            alt="first_illustrations"
-                                        />
-                                    </div>
+                                    {isShowVerse && (
+                                        <div className="firstIll">
+                                            <img
+                                                src={firstIll}
+                                                alt="first_illustrations"
+                                            />
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
