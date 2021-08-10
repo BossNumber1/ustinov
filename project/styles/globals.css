@@ -64,3 +64,16 @@ a {
     width: 170px;
     height: 110px;
 }
+
+.verseCard {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.verseCard img {
+    width: 100px;
+    height: 100px;
+}
