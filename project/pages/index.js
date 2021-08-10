@@ -319,6 +319,11 @@ export default function Home() {
                                                     style={{
                                                         backgroundColor:
                                                             "white",
+                                                        borderRadius: 15,
+                                                        width: "60%",
+                                                        marginLeft: "20%",
+                                                        boxShadow:
+                                                            "0 0 10px white",
                                                     }}
                                                 >
                                                     <div
@@ -326,6 +331,7 @@ export default function Home() {
                                                             fontWeight: "bold",
                                                             marginBottom: 10,
                                                             paddingTop: 10,
+                                                            marginTop: 10,
                                                         }}
                                                     >
                                                         Ах!
@@ -335,6 +341,15 @@ export default function Home() {
                                                             __html: verseStore.content,
                                                         }}
                                                     />
+                                                    <div className="firstIll">
+                                                        <img
+                                                            src={firstIll}
+                                                            alt="first_illustrations"
+                                                            style={{
+                                                                paddingBottom: 30,
+                                                            }}
+                                                        />
+                                                    </div>
                                                 </div>
                                             </>
                                         ) : (
@@ -350,14 +365,6 @@ export default function Home() {
                                             </div>
                                         )}
                                     </div>
-                                    {isShowVerse && (
-                                        <div className="firstIll">
-                                            <img
-                                                src={firstIll}
-                                                alt="first_illustrations"
-                                            />
-                                        </div>
-                                    )}
                                 </div>
                             </div>
                         </div>
