@@ -21,6 +21,7 @@ import signa from "./about/signa.jpg";
 
 import firstIll from "./illustrations/1.jpg";
 import bgim from "./bgim.jpg";
+import hidePostIcon from "./hidePost.png";
 
 import styles from "../styles/Home.module.css";
 
@@ -74,17 +75,7 @@ export default function Home() {
     };
 
     const showPost = () => {
-        debugger;
-        // document.getElementById("krut").onclick = () => {
         document.body.style.background = "gray";
-        // if (document.body.style.background === "white") {
-        //     debugger;
-        //     document.body.style.background = "gray";
-        // } else {
-        //     debugger;
-        //     document.body.style.background = "white";
-        // }
-        // };
         setShowVerse(true);
     };
 
@@ -309,12 +300,6 @@ export default function Home() {
                                     >
                                         {isShowVerse ? (
                                             <>
-                                                <button
-                                                    onClick={hidePost}
-                                                    className="btn btn-warning"
-                                                >
-                                                    Скрыть стих
-                                                </button>{" "}
                                                 <div
                                                     style={{
                                                         backgroundColor:
@@ -326,6 +311,17 @@ export default function Home() {
                                                             "0 0 10px white",
                                                     }}
                                                 >
+                                                    <button
+                                                        onClick={hidePost}
+                                                        className="btnHidePost"
+                                                        data-title="Скрыть стих"
+                                                    >
+                                                        <img
+                                                            src={hidePostIcon}
+                                                            alt="hide post icon"
+                                                        />
+                                                    </button>
+
                                                     <div
                                                         style={{
                                                             fontWeight: "bold",

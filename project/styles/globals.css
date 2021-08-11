@@ -77,3 +77,25 @@ a {
     width: 100px;
     height: 100px;
 }
+
+.btnHidePost {
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+
+/*всплывающая prompt при наведении*/
+.btnHidePost:hover::after {
+    position: absolute;
+    /* z-index: 1; */
+    background: rgb(174, 177, 8);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    width: 70px;
+    content: attr(data-title);
+    right: 195px;
+    top: 765px;
+}
