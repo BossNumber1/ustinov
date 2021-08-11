@@ -357,15 +357,7 @@ export default function Home() {
                                                     src={bgim}
                                                     alt="album picture"
                                                 />
-                                                <div
-                                                    style={{
-                                                        fontSize: "25",
-                                                        marginTop: -64,
-                                                        position: "absolute",
-                                                        color: "white",
-                                                        marginLeft: 30,
-                                                    }}
-                                                >
+                                                <div className="titleOnPage">
                                                     Ах
                                                 </div>
                                             </div>

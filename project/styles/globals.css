@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
 html,
 body {
     padding: 0;
@@ -98,4 +100,13 @@ a {
     content: attr(data-title);
     right: 195px;
     top: 765px;
+}
+
+.titleOnPage {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    margin-top: -70px;
+    position: absolute;
+    color: white;
+    margin-left: 33px;
 }
