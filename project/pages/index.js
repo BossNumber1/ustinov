@@ -20,7 +20,7 @@ import eight from "./about/8.jpg";
 import signa from "./about/signa.jpg";
 
 import firstIll from "./illustrations/1.jpg";
-import bgim from "./bgim.jpg";
+// import bgim from "./bgim.jpg";
 import hidePostIcon from "./hidePost.png";
 
 import styles from "../styles/Home.module.css";
@@ -354,8 +354,11 @@ export default function Home() {
                                                 onClick={showPost}
                                             >
                                                 <img
-                                                    src={bgim}
+                                                    src={firstIll}
                                                     alt="album picture"
+                                                    style={{
+                                                        filter: "blur(4px)",
+                                                    }}
                                                 />
                                                 <div className="titleOnPage">
                                                     Ах
