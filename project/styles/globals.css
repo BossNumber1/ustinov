@@ -73,6 +73,8 @@ a {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    /* border: 1px solid #333; */
+    box-shadow: 0 0 10px #333;
 }
 
 .verseCard img {
@@ -107,6 +109,7 @@ a {
     font-size: 30px;
     margin-top: -70px;
     position: absolute;
-    color: white;
+    color: #333;
+    /* color: white; */
     margin-left: 33px;
 }
