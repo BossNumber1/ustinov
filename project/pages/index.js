@@ -23,7 +23,11 @@ import firstIll from "./illustrations/1.jpg";
 // import bgim from "./bgim.jpg";
 import hidePostIcon from "./hidePost.png";
 
+// import dmh from "./dmh.mp4";
+
 import styles from "../styles/Home.module.css";
+
+import ReactPlayer from "react-player";
 
 export default function Home() {
     const [isShowVerse, setShowVerse] = React.useState(false);
@@ -365,6 +369,25 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         )}
+                                    </div>
+
+                                    <div
+                                        style={{
+                                            marginTop: 30,
+                                        }}
+                                    >
+                                        <h1>Дорогой мой человек</h1>
+                                        <h5>
+                                            Вершина моего искусства, пока что 😁
+                                        </h5>
+                                        <ReactPlayer
+                                            controls
+                                            url="https://clck.ru/WpteA"
+                                            style={{
+                                                border: "1px solid gray",
+                                                marginLeft: 230,
+                                            }}
+                                        />
                                     </div>
                                 </div>
                             </div>
