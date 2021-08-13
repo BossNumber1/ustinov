@@ -82,6 +82,11 @@ a {
     height: 100px;
 }
 
+.verseCard:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+}
+
 .btnHidePost {
     float: right;
     border: none;
