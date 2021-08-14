@@ -1,20 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import logotip from "./logotip.jpg";
-import entm from "./entm.png";
 import vk from "./vk.png";
 import insta from "./insta.png";
 import twt from "./twt.png";
 import yt from "./yt.png";
-
-import one from "./about/1.jpg";
-import two from "./about/2.jpg";
-import three from "./about/3.jpg";
-import four from "./about/4.jpg";
-import five from "./about/5.jpg";
-import six from "./about/6.jpg";
-import seven from "./about/7.jpg";
-
 import firstIll from "./illustrations/1.jpg";
 // import bgim from "./bgim.jpg";
 import hidePostIcon from "./hidePost.png";
@@ -25,6 +14,7 @@ import styles from "../styles/Home.module.css";
 
 import ReactPlayer from "react-player";
 import LeftBlock from "../components/leftBlock/LeftBlock";
+import MainScreen from "../components/mainScreen/MainScreen";
 
 export default function Home() {
     const [isShowVerse, setShowVerse] = React.useState(false);
@@ -93,116 +83,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <div style={{ position: "relative" }}>
-                    <div>
-                        {/* style={{ position: "absolute" }}> */}{" "}
-                        <img
-                            src={logotip}
-                            alt="logo1"
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto",
-                                zIndex: 2,
-                            }}
-                        />
-                    </div>
-                    <div style={{ marginTop: 8 }}>
-                        {/* <img
-                            src={entm}
-                            alt="logo2"
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto",
-                                marginTop: 122,
-                                zIndex: -1,
-                            }}
-                        /> */}
-                        <img
-                            src={one}
-                            alt="about_one"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                marginRight: 5,
-                            }}
-                        />
-                        <img
-                            src={two}
-                            alt="about_two"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                marginRight: 5,
-                            }}
-                        />
-                        <img
-                            src={three}
-                            alt="about_three"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                marginRight: 5,
-                            }}
-                        />
-                        <img
-                            src={four}
-                            alt="about_four"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                marginRight: 5,
-                            }}
-                        />
-                        <img
-                            src={five}
-                            alt="about_five"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                marginRight: 5,
-                            }}
-                        />
-                        <img
-                            src={six}
-                            alt="about_six"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                marginRight: 5,
-                            }}
-                        />
-                        <img
-                            src={seven}
-                            alt="about_seven"
-                            style={{
-                                // maxWidth: "100%",
-                                // height: "auto",
-                                // marginTop: 122,
-                                zIndex: -1,
-                                float: "left",
-                                // marginRight: 5,
-                            }}
-                        />
-                    </div>
-                </div>
+                <MainScreen />
                 <div className={styles.main}>
                     <div
                         style={{
