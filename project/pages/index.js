@@ -1,9 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import vk from "./vk.png";
-import insta from "./insta.png";
-import twt from "./twt.png";
-import yt from "./yt.png";
 import firstIll from "./illustrations/1.jpg";
 // import bgim from "./bgim.jpg";
 import hidePostIcon from "./hidePost.png";
@@ -16,6 +12,7 @@ import LeftBlock from "../components/leftBlock/LeftBlock";
 import MainScreen from "../components/mainScreen/MainScreen";
 import Welcome from "../components/welcome/Welcome";
 import Video from "../components/video/Video";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
     const [isShowVerse, setShowVerse] = React.useState(false);
@@ -175,35 +172,7 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <footer style={{ marginLeft: 495, marginTop: 40 }}>
-                {/* <div> */}
-                <a href="https://vk.com/moy_ustimov" target="_blank">
-                    <img src={vk} alt="vk_icon" style={{ marginRight: 32 }} />
-                </a>
-
-                <a href="https://twitter.com/moy_ustimov" target="_blank">
-                    <img
-                        src={twt}
-                        alt="twitter_icon"
-                        style={{ marginRight: 32 }}
-                    />
-                </a>
-                <a href="https://www.instagram.com/moy_ustimov">
-                    <img
-                        src={insta}
-                        alt="instagramm_icon"
-                        style={{ marginRight: 32 }}
-                    />
-                </a>
-                <a href="https://youtube.com/moy_ustimov" target="_blank">
-                    <img
-                        src={yt}
-                        alt="youtube_icon"
-                        style={{ marginRight: 32 }}
-                    />
-                </a>
-                {/* </div> */}
-            </footer>
+            <Footer />
         </div>
     );
 }
