@@ -1,10 +1,12 @@
 import React from "react";
 import firstIll from "../../pages/illustrations/1.jpg";
 import hidePostIcon from "../../pages/hidePost.png";
+import AlbumPicture from "./AlbumPicture";
 
 function IsShowVerse() {
-    let verseStore = {
-        content: `Ах! Сколько в этом взгляде красоты
+    let verseStore = [
+        {
+            content: `Ах! Сколько в этом взгляде красоты
                                         <br />и нежности, дарованной богами!
                                         <br />
                                         Да, каждый раз при встрече только ты
@@ -47,7 +49,9 @@ function IsShowVerse() {
                                         <br /> И, как бы не меняли нас года,
                                         <br />
                                         тебя ни на кого не променяю!`,
-    };
+        },
+        { content: `Ух!` },
+    ];
 
     const [isShowVerse, setShowVerse] = React.useState(false);
 
@@ -65,15 +69,7 @@ function IsShowVerse() {
         <>
             {isShowVerse ? (
                 <>
-                    <div
-                        style={{
-                            backgroundColor: "white",
-                            borderRadius: 15,
-                            width: "60%",
-                            marginLeft: "20%",
-                            boxShadow: "0 0 10px white",
-                        }}
-                    >
+                    <div className="postVerse">
                         <button
                             onClick={hidePost}
                             className="btnHidePost"
@@ -82,19 +78,10 @@ function IsShowVerse() {
                             <img src={hidePostIcon} alt="hide post icon" />
                         </button>
 
-                        <div
-                            style={{
-                                fontWeight: "bold",
-                                marginBottom: 10,
-                                paddingTop: 10,
-                                marginTop: 10,
-                            }}
-                        >
-                            Ах!
-                        </div>
+                        <div className="labelVerse">Ах!</div>
                         <div
                             dangerouslySetInnerHTML={{
-                                __html: verseStore.content,
+                                __html: verseStore[0].content,
                             }}
                         />
                         <div className="firstIll">
@@ -109,16 +96,7 @@ function IsShowVerse() {
                     </div>
                 </>
             ) : (
-                <div className="verseCard" onClick={showPost}>
-                    <img
-                        src={firstIll}
-                        alt="album picture"
-                        style={{
-                            filter: "blur(4px)",
-                        }}
-                    />
-                    <div className="titleOnPage">Ах</div>
-                </div>
+                <AlbumPicture showPost={showPost} firstIll={firstIll} />
             )}
         </>
     );

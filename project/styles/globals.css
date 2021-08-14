@@ -80,6 +80,7 @@ a {
 .verseCard img {
     width: 100px;
     height: 100px;
+    filter: blur(4px);
 }
 
 .verseCard:hover {
@@ -117,4 +118,20 @@ a {
     color: #333;
     /* color: white; */
     margin-left: 33px;
+}
+
+.labelVerse {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.postVerse {
+    background-color: white;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 0 0 10px white;
+    /* font-size: large; */
 }
