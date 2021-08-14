@@ -15,6 +15,7 @@ import styles from "../styles/Home.module.css";
 import ReactPlayer from "react-player";
 import LeftBlock from "../components/leftBlock/LeftBlock";
 import MainScreen from "../components/mainScreen/MainScreen";
+import Welcome from "../components/welcome/Welcome";
 
 export default function Home() {
     const [isShowVerse, setShowVerse] = React.useState(false);
@@ -90,35 +91,7 @@ export default function Home() {
                             marginTop: 280,
                         }}
                     >
-                        <div
-                            style={{
-                                marginBottom: 23,
-                                paddingBottom: 23,
-                                borderBottom: "1px solid gray",
-                            }}
-                        >
-                            <div className="mt-4" style={{ marginBottom: 10 }}>
-                                Привет 🙂
-                            </div>
-                            <div
-                                className="mt-4 mb-4"
-                                style={{ marginBottom: 15 }}
-                            >
-                                Меня зовут Дмитрий Устинов. Пишу под псевдонимом
-                                Мой Устимов
-                            </div>
-                            <div style={{ marginBottom: 15 }}>
-                                <div>Я - поэт</div>
-                                <div>
-                                    Пишу стихи, создаю клипы и делаю многое
-                                    другое
-                                </div>
-                            </div>
-
-                            <div className="mt-4 mb-5">
-                                <b>Welcome</b>
-                            </div>
-                        </div>
+                        <Welcome />
                         <div className="body_page">
                             <div className="leftBlock">
                                 <LeftBlock />
