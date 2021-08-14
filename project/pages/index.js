@@ -6,7 +6,6 @@ import vk from "./vk.png";
 import insta from "./insta.png";
 import twt from "./twt.png";
 import yt from "./yt.png";
-import twit from "./twit.png";
 
 import one from "./about/1.jpg";
 import two from "./about/2.jpg";
@@ -15,9 +14,6 @@ import four from "./about/4.jpg";
 import five from "./about/5.jpg";
 import six from "./about/6.jpg";
 import seven from "./about/7.jpg";
-import eight from "./about/8.jpg";
-
-import signa from "./about/signa.jpg";
 
 import firstIll from "./illustrations/1.jpg";
 // import bgim from "./bgim.jpg";
@@ -28,6 +24,7 @@ import hidePostIcon from "./hidePost.png";
 import styles from "../styles/Home.module.css";
 
 import ReactPlayer from "react-player";
+import LeftBlock from "../components/leftBlock/LeftBlock";
 
 export default function Home() {
     const [isShowVerse, setShowVerse] = React.useState(false);
@@ -243,53 +240,7 @@ export default function Home() {
                         </div>
                         <div className="body_page">
                             <div className="leftBlock">
-                                <div>
-                                    <img
-                                        src={signa}
-                                        alt="signa"
-                                        style={{
-                                            maxWidth: "100%",
-                                            height: "auto",
-                                            zIndex: 2,
-                                        }}
-                                    />
-                                    <img
-                                        src={eight}
-                                        alt="about_eight"
-                                        width="50px"
-                                        height="50px"
-                                        style={{
-                                            // maxWidth: "100%",
-                                            // height: "auto",
-                                            // marginTop: 122,
-                                            zIndex: -1,
-                                            float: "left",
-                                            // marginRight: 5,
-                                            borderRadius: 50,
-                                        }}
-                                    />
-                                </div>
-                                <div
-                                    style={{
-                                        // position: "absolute",
-                                        top: 130,
-                                        left: 130,
-                                    }}
-                                >
-                                    <p>Дмитрий Устинов</p>
-                                    <p>26 лет (род. 9.6.95)</p>
-                                    <p>
-                                        Живёт в <br />
-                                        Великом Новгороде
-                                    </p>
-                                    <p>
-                                        Мечтает о многом. Например, переехать в
-                                        другой город ☺
-                                    </p>
-                                </div>
-                                <div className="twitIll">
-                                    <img src={twit} alt="post in twitter" />
-                                </div>
+                                <LeftBlock />
                             </div>
                             <div className="rightBlock">
                                 <div
