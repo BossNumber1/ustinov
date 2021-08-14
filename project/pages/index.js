@@ -12,10 +12,10 @@ import hidePostIcon from "./hidePost.png";
 
 import styles from "../styles/Home.module.css";
 
-import ReactPlayer from "react-player";
 import LeftBlock from "../components/leftBlock/LeftBlock";
 import MainScreen from "../components/mainScreen/MainScreen";
 import Welcome from "../components/welcome/Welcome";
+import Video from "../components/video/Video";
 
 export default function Home() {
     const [isShowVerse, setShowVerse] = React.useState(false);
@@ -97,16 +97,8 @@ export default function Home() {
                                 <LeftBlock />
                             </div>
                             <div className="rightBlock">
-                                <div
-                                // style={{ display: "flex" }}
-                                >
-                                    <div
-                                    // style={{
-                                    //     // float: "left",
-                                    //     // marginLeft: 100,
-
-                                    // }}
-                                    >
+                                <div>
+                                    <div>
                                         {isShowVerse ? (
                                             <>
                                                 <div
@@ -176,24 +168,7 @@ export default function Home() {
                                         )}
                                     </div>
 
-                                    <div
-                                        style={{
-                                            marginTop: 30,
-                                        }}
-                                    >
-                                        <h1>Дорогой мой человек</h1>
-                                        <h5>
-                                            Вершина моего искусства, пока что 😁
-                                        </h5>
-                                        <ReactPlayer
-                                            controls
-                                            url="https://clck.ru/WpteA"
-                                            style={{
-                                                border: "1px solid gray",
-                                                marginLeft: 230,
-                                            }}
-                                        />
-                                    </div>
+                                    <Video />
                                 </div>
                             </div>
                         </div>
