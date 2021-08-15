@@ -136,3 +136,11 @@ a {
     box-shadow: 0 0 10px white;
     /* font-size: large; */
 }
+
+.verseStyles {
+    display: flex;
+}
+
+.verseStyles > div {
+    margin-right: 15px;
+}

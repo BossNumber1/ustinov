@@ -50,16 +50,21 @@ function Verses() {
                                         тебя ни на кого не променяю!`,
             illustration: firstIll,
         },
-        { content: `Ух!` },
+        { content: `Ух!`, illustration: "https://clck.ru/Wr2ZT" },
     ];
 
     return (
-        <>
+        <div className="verseStyles">
             <IsShowVerse
                 verse={verseStore[0].content}
                 illustration={verseStore[0].illustration}
             />
-        </>
+
+            <IsShowVerse
+                verse={verseStore[1].content}
+                illustration={verseStore[1].illustration}
+            />
+        </div>
     );
 }
 
