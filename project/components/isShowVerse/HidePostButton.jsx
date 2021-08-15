@@ -8,11 +8,7 @@ function HidePostButton({ setShowVerse }) {
     };
 
     return (
-        <button
-            onClick={hidePost}
-            className="btnHidePost"
-            data-title="Скрыть стих"
-        >
+        <button onClick={hidePost} className="btnHidePost">
             <img src={hidePostIcon} alt="hide post icon" />
         </button>
     );

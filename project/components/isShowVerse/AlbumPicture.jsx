@@ -1,10 +1,15 @@
 import React from "react";
 
-function AlbumPicture({ showPost, albumPicture }) {
+function AlbumPicture({ id, showPost, albumPicture, title }) {
+    React.useEffect(() => {
+        let verseCardElement = document.getElementsByClassName("verseCard")[id];
+        verseCardElement.style.backgroundImage = `url('${albumPicture}')`;
+    }, []);
+
     return (
-        <div className="verseCard" onClick={showPost}>
-            <img src={albumPicture} alt="album picture" />
-            <div className="titleOnPage">Ах</div>
+        <div className="albumPicture" onClick={showPost}>
+            <div className="verseCard" />
+            <div className="titleOnPage">{title}</div>
         </div>
     );
 }

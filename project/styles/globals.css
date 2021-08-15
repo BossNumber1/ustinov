@@ -17,10 +17,6 @@ a {
     box-sizing: border-box;
 }
 
-/* .temp {
-    background-color: orange;
-} */
-
 .body_page {
     display: grid;
     grid-template-areas: "leftBlock rightBlock";
@@ -68,57 +64,61 @@ a {
     height: 110px;
 }
 
-.verseCard {
-    width: 100px;
+.albumPicture {
+    position: relative;
     height: 100px;
+    width: 100px;
     border-radius: 10px;
-    overflow: hidden;
     cursor: pointer;
-    /* border: 1px solid #333; */
     box-shadow: 0 0 5px #333;
+    /* margin: auto 0; */
+    /* left: 50%;
+    top: 50%;
+    transform: translateX(-50%); */
+    /* overflow: hidden; */
 }
 
-.verseCard img {
-    width: 100px;
-    height: 100px;
-    filter: blur(4px);
-}
-
-.verseCard:hover {
+.albumPicture:hover {
     transform: scale(1.1);
     transition-duration: 1.5s;
+    /* transition: all 1s ease; */
+}
+
+.verseCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://clck.ru/WrD6j") no-repeat center;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    filter: blur(1px);
+    overflow: hidden;
+    /* margin-top: -65px; */
+    /* padding-bottom: 56px; */
+    /* display: flex; */
+}
+
+.titleOnPage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: #333;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    /* color: white; */
 }
 
 .btnHidePost {
     float: right;
     border: none;
     cursor: pointer;
-}
-
-/*всплывающая prompt при наведении*/
-.btnHidePost:hover::after {
-    position: absolute;
-    /* z-index: 1; */
-    background: rgb(174, 177, 8);
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    padding: 5px 10px;
-    border: 1px solid #333;
-    border-radius: 3px;
-    width: 100px;
-    content: attr(data-title);
-    right: 195px;
-    top: 765px;
-}
-
-.titleOnPage {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 30px;
-    margin-top: -70px;
-    position: absolute;
-    color: #333;
-    /* color: white; */
-    margin-left: 33px;
+    outline: none;
 }
 
 .labelVerse {

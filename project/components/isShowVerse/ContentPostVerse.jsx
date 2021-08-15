@@ -1,9 +1,9 @@
 import React from "react";
 
-function ContentPostVerse({ illustration, verse }) {
+function ContentPostVerse({ title, verse, illustration }) {
     return (
         <>
-            <div className="labelVerse">Ах!</div>
+            <div className="labelVerse">{title}</div>
             <div
                 dangerouslySetInnerHTML={{
                     __html: verse,

@@ -1,10 +1,11 @@
 import React from "react";
 import IsShowVerse from "./IsShowVerse";
-import firstIll from "../../pages/illustrations/1.jpg";
 
 function Verses() {
     let verseStore = [
         {
+            id: "0",
+            title: "Ах",
             content: `Ах! Сколько в этом взгляде красоты
                                         <br />и нежности, дарованной богами!
                                         <br />
@@ -48,19 +49,56 @@ function Verses() {
                                         <br /> И, как бы не меняли нас года,
                                         <br />
                                         тебя ни на кого не променяю!`,
-            illustration: firstIll,
+            illustration: "https://clck.ru/WrKCP",
         },
-        { content: `Ух!`, illustration: "https://clck.ru/Wr2ZT" },
+        {
+            id: "1",
+            title: "Помню",
+            content: `Помню ветер голосистый,<br />
+                        как смеялись мы:<br />
+                        я и ты, мой милый sister,<br />
+                        у грядущей тьмы.<br />
+                        <br /><br />
+                        Нам тогда - тепло и ярко<br />
+                        в глубине души.<br />
+                        Называл своим подарком,<br />
+                        чувства не душил.<br />
+                        <br /><br />
+                        Грезил, что навечно будем<br />
+                        юны и просты.<br />
+                        Но ворвался без прелюдий<br />
+                        возраст, где простыл<br />
+                        <br /><br />
+                        каждый маленький ребёнок,<br />
+                        ставши чурбаном.<br />
+                        Много дел - стена от тонок<br />
+                        в ширь - стирает дом.<br />
+                        <br /><br />
+                        Легче, больше disconnectим,<br />
+                        меньше тет-а-тет.<br />
+                        И меняем снова сеттинг<br />
+                        вместо встречиnet.<br />
+                        <br /><br />
+                        Но уверен, поправимо<br />
+                        всё, что пало в грязь.<br />
+                        <br /><br />
+                        Помню вечер, тихо шли мы,<br />
+                        за руку держась.`,
+            illustration: "https://clck.ru/Wr3DQ",
+        },
     ];
 
     return (
         <div className="verseStyles">
             <IsShowVerse
+                id={verseStore[0].id}
+                title={verseStore[0].title}
                 verse={verseStore[0].content}
                 illustration={verseStore[0].illustration}
             />
-
             <IsShowVerse
+                id={verseStore[1].id}
+                title={verseStore[1].title}
                 verse={verseStore[1].content}
                 illustration={verseStore[1].illustration}
             />
