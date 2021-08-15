@@ -1,15 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-// import bgim from "./bgim.jpg";
-// import dmh from "./dmh.mp4";
-
 import LeftBlock from "../components/leftBlock/LeftBlock";
 import MainScreen from "../components/mainScreen/MainScreen";
 import Welcome from "../components/welcome/Welcome";
 import Video from "../components/video/Video";
 import Footer from "../components/footer/Footer";
-import IsShowVerse from "../components/isShowVerse/IsShowVerse";
+import Verses from "../components/isShowVerse/Verses";
 
 export default function Home() {
     return (
@@ -33,7 +30,7 @@ export default function Home() {
                                 <LeftBlock />
                             </div>
                             <div className="rightBlock">
-                                <IsShowVerse />
+                                <Verses />
                                 <Video />
                             </div>
                         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
-function AlbumPicture({ showPost, firstIll }) {
+function AlbumPicture({ showPost, albumPicture }) {
     return (
         <div className="verseCard" onClick={showPost}>
-            <img src={firstIll} alt="album picture" />
+            <img src={albumPicture} alt="album picture" />
             <div className="titleOnPage">Ах</div>
         </div>
     );

@@ -54,6 +54,7 @@ a {
 .firstIll img {
     width: 360px;
     height: 512px;
+    padding-bottom: 30px;
 }
 
 .twitIll {
