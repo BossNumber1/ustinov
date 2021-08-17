@@ -14,6 +14,10 @@ export default function Home() {
             <Head>
                 <title>Мой Устимов</title>
                 <meta name="description" content="Независимая страница поэта" />
+                <meta
+                    property="og:image"
+                    content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG"
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
