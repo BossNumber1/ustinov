@@ -9,7 +9,7 @@ function ContentPostVerse({ title, verse, illustration }) {
                     __html: verse,
                 }}
             />
-            <div className="firstIll">
+            <div className="illustration">
                 <img src={illustration} alt="illustration" />
             </div>
         </>

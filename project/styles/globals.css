@@ -36,18 +36,18 @@ a {
     /* background-color: orange; */
 }
 
-.firstIll {
+.illustration {
     width: 360px;
     height: 512px;
     margin-top: 20px;
-    margin-left: 23%;
+    margin-left: 26%;
     /* display: "flex";
     justify-content: center;
     align-items: center; */
     /* text-align: center; */
 }
 
-.firstIll img {
+.illustration img {
     width: 360px;
     height: 512px;
     padding-bottom: 30px;
@@ -131,7 +131,7 @@ a {
 .postVerse {
     background-color: white;
     border-radius: 15px;
-    width: 60%;
+    width: 200%;
     margin-left: 20%;
     box-shadow: 0 0 10px white;
     /* font-size: large; */
