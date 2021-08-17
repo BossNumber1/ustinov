@@ -101,6 +101,10 @@ function Verses() {
                 array.forEach(function (item) {
                     document.getElementById(`verse${item}id`).style.display =
                         "none";
+
+                    document.getElementsByClassName(
+                        "videoBlock"
+                    )[0].style.display = "none";
                 });
             }
 
@@ -114,6 +118,9 @@ function Verses() {
 
             array.forEach(function (item) {
                 document.getElementById(`verse${item}id`).style.display =
+                    "initial";
+
+                document.getElementsByClassName("videoBlock")[0].style.display =
                     "initial";
             });
 

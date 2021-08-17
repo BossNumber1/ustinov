@@ -3,11 +3,7 @@ import ReactPlayer from "react-player";
 
 function Video() {
     return (
-        <div
-            style={{
-                marginTop: 30,
-            }}
-        >
+        <div className="videoBlock">
             <h1>Дорогой мой человек</h1>
             <h5>Вершина моего искусства, пока что 😁</h5>
             <ReactPlayer
