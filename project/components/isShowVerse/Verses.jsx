@@ -96,57 +96,28 @@ function Verses() {
             const array = [0, 1];
             const index = array.indexOf(+isHideOtherVerses);
 
-            // let user = array.find((item) => item === isHideOtherVerses);
-
-            // console.log(user);
-
-            debugger;
-
-            // arr.forEach(function (item, index, array) {
-            //     // ... делать что-то с item
-            // });
-
-            // if (user) {
             if (index > -1) {
-                debugger;
                 array.splice(index, 1);
-                debugger;
                 array.forEach(function (item) {
-                    debugger;
-                    // alert("vuuuh!! item=" + item);
                     document.getElementById(`verse${item}id`).style.display =
                         "none";
-
-                    debugger;
                 });
             }
 
             setVer(false);
         }
-
-        // console.log(`verse${isHideOtherVerses}id`);
     }, [isHideOtherVerses]);
 
     React.useEffect(() => {
         if (ver) {
-            // alert("hide");
             const array = [0, 1];
-            // const index = array.indexOf(isHideOtherVerses);
-            // debugger;
-            // if (index > -2) {
-            // debugger;
-
-            // let newArr = array.splice(index, 1);
 
             array.forEach(function (item) {
                 document.getElementById(`verse${item}id`).style.display =
                     "initial";
-
-                // debugger;
             });
 
             setHideOtherVerses(false);
-            // }
         }
     }, [ver]);
 
