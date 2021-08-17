@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Мой Устимов</title>
+                <title>Мой Устимов22</title>
                 <meta name="description" content="Независимая страница поэта" />
                 <meta
                     property="og:image"
