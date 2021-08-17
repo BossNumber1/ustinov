@@ -37,10 +37,15 @@ a {
 }
 
 .illustration {
-    width: 360px;
+    display: inline-block;
+    /* width: 360px; */
     height: 512px;
     margin-top: 20px;
-    margin-left: 26%;
+    /* text-align: center; */
+    /* margin-left: 8%;  */
+    /*26*/
+
+    /* background-color: #333; */
     /* display: "flex";
     justify-content: center;
     align-items: center; */
@@ -48,7 +53,8 @@ a {
 }
 
 .illustration img {
-    width: 360px;
+    /* width: 10%; */
+    /* width: 360px; */
     height: 512px;
     padding-bottom: 30px;
 }
@@ -131,7 +137,9 @@ a {
 .postVerse {
     background-color: white;
     border-radius: 15px;
-    width: 200%;
+    min-width: 700px;
+    max-width: 100%;
+    /*200%*/
     margin-left: 20%;
     box-shadow: 0 0 10px white;
     /* font-size: large; */
