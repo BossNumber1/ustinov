@@ -1,10 +1,11 @@
 import React from "react";
 import hidePostIcon from "../../pages/hidePost.png";
 
-function HidePostButton({ setShowVerse }) {
+function HidePostButton({ setShowVerse, setVer }) {
     const hidePost = () => {
         document.body.style.background = "white";
         setShowVerse(false);
+        setVer(true);
     };
 
     return (

@@ -88,20 +88,90 @@ function Verses() {
         },
     ];
 
+    const [isHideOtherVerses, setHideOtherVerses] = React.useState(false);
+    const [ver, setVer] = React.useState(false);
+
+    React.useEffect(() => {
+        if (`verse${isHideOtherVerses}id` !== "versefalseid") {
+            const array = [0, 1];
+            const index = array.indexOf(+isHideOtherVerses);
+
+            // let user = array.find((item) => item === isHideOtherVerses);
+
+            // console.log(user);
+
+            debugger;
+
+            // arr.forEach(function (item, index, array) {
+            //     // ... делать что-то с item
+            // });
+
+            // if (user) {
+            if (index > -1) {
+                debugger;
+                array.splice(index, 1);
+                debugger;
+                array.forEach(function (item) {
+                    debugger;
+                    // alert("vuuuh!! item=" + item);
+                    document.getElementById(`verse${item}id`).style.display =
+                        "none";
+
+                    debugger;
+                });
+            }
+
+            setVer(false);
+        }
+
+        // console.log(`verse${isHideOtherVerses}id`);
+    }, [isHideOtherVerses]);
+
+    React.useEffect(() => {
+        if (ver) {
+            // alert("hide");
+            const array = [0, 1];
+            // const index = array.indexOf(isHideOtherVerses);
+            // debugger;
+            // if (index > -2) {
+            // debugger;
+
+            // let newArr = array.splice(index, 1);
+
+            array.forEach(function (item) {
+                document.getElementById(`verse${item}id`).style.display =
+                    "initial";
+
+                // debugger;
+            });
+
+            setHideOtherVerses(false);
+            // }
+        }
+    }, [ver]);
+
     return (
         <div className="verseStyles">
-            <IsShowVerse
-                id={verseStore[0].id}
-                title={verseStore[0].title}
-                verse={verseStore[0].content}
-                illustration={verseStore[0].illustration}
-            />
-            <IsShowVerse
-                id={verseStore[1].id}
-                title={verseStore[1].title}
-                verse={verseStore[1].content}
-                illustration={verseStore[1].illustration}
-            />
+            <div id={`verse${verseStore[0].id}id`}>
+                <IsShowVerse
+                    id={verseStore[0].id}
+                    title={verseStore[0].title}
+                    verse={verseStore[0].content}
+                    illustration={verseStore[0].illustration}
+                    setHideOtherVerses={setHideOtherVerses}
+                    setVer={setVer}
+                />
+            </div>
+            <div id={`verse${verseStore[1].id}id`}>
+                <IsShowVerse
+                    id={verseStore[1].id}
+                    title={verseStore[1].title}
+                    verse={verseStore[1].content}
+                    illustration={verseStore[1].illustration}
+                    setHideOtherVerses={setHideOtherVerses}
+                    setVer={setVer}
+                />
+            </div>
         </div>
     );
 }
