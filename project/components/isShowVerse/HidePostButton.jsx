@@ -1,15 +1,10 @@
 import React from "react";
+import Router from "next/router";
 import hidePostIcon from "../../pages/hidePost.png";
 
-function HidePostButton({ setShowVerse, setVer }) {
-    const hidePost = () => {
-        document.body.style.background = "white";
-        setShowVerse(false);
-        setVer(true);
-    };
-
+function HidePostButton() {
     return (
-        <button onClick={hidePost} className="btnHidePost">
+        <button onClick={() => Router.push("/")} className="btnHidePost">
             <img src={hidePostIcon} alt="hide post icon" />
         </button>
     );

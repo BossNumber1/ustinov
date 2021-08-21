@@ -147,6 +147,7 @@ a {
 
 .verseStyles {
     display: flex;
+    cursor: pointer;
 }
 
 .verseStyles > div {

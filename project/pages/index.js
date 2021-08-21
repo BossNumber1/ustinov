@@ -12,11 +12,11 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Мой Устимов22</title>
+                <title>Мой Устимов поэт</title>
                 <meta name="description" content="Независимая страница поэта" />
                 <meta
-                    property="og:image"
                     content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG"
+                    property="og:image"
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
