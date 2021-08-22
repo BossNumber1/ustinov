@@ -18,14 +18,14 @@ function Verses() {
         <div className="verseStyles">
             {versesStore ? (
                 <>
-                    <div onClick={() => Router.push("/getVerse/firstVerse")}>
+                    <div onClick={() => Router.push("/getVerse/first")}>
                         <AlbumPicture
                             id={versesStore[0].id}
                             albumPicture={versesStore[0].illustration}
                             title={versesStore[0].title}
                         />
                     </div>
-                    <div onClick={() => Router.push("/getVerse/secondVerse")}>
+                    <div onClick={() => Router.push("/getVerse/second")}>
                         <AlbumPicture
                             id={versesStore[1].id}
                             albumPicture={versesStore[1].illustration}
