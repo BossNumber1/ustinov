@@ -7,8 +7,9 @@ function Verses() {
     const [versesStore, setVersesStore] = React.useState(false);
 
     React.useEffect(() => {
+        debugger;
         axios
-            .get(`https://www.ustinnov.herokuapp.com/getAllAlbumCovers/`)
+            .get(`https://ustinnov.herokuapp.com/getAllAlbumCovers/`)
             .then((response) => {
                 setVersesStore(response.data);
             });

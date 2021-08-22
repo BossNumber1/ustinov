@@ -12,7 +12,7 @@ function GetVerse() {
         router.query.title !== undefined &&
             axios
                 .get(
-                    `https://www.ustinnov.herokuapp.com/getVerse/${router.query.title}`
+                    `https://ustinnov.herokuapp.com/getVerse/${router.query.title}`
                 )
                 .then((response) => {
                     setVerse(response.data);
