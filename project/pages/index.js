@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Мой Устимов поэт</title>
+                <title>Мой Устимов</title>
                 <meta
                     name="description"
                     content="Крепость независимости поэта"
