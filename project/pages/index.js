@@ -13,7 +13,10 @@ export default function Home() {
         <div>
             <Head>
                 <title>Мой Устимов поэт</title>
-                <meta name="description" content="Независимая страница поэта" />
+                <meta
+                    name="description"
+                    content="Крепость независимости поэта"
+                />
                 <meta
                     content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG"
                     property="og:image"

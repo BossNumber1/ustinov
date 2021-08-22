@@ -2,14 +2,16 @@ import React from "react";
 import Router from "next/router";
 import AlbumPicture from "./AlbumPicture";
 import axios from "axios";
-
+// localhost: 80; --- www.ustinnov.herokuapp.com
 function Verses() {
     const [versesStore, setVersesStore] = React.useState(false);
 
     React.useEffect(() => {
-        axios.get(`http://localhost:80/getAllAlbumCovers/`).then((response) => {
-            setVersesStore(response.data);
-        });
+        axios
+            .get(`https://www.ustinnov.herokuapp.com/getAllAlbumCovers/`)
+            .then((response) => {
+                setVersesStore(response.data);
+            });
     }, []);
 
     return (

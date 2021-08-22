@@ -11,7 +11,9 @@ function GetVerse() {
     React.useEffect(() => {
         router.query.title !== undefined &&
             axios
-                .get(`http://localhost:80/getVerse/${router.query.title}`)
+                .get(
+                    `https://www.ustinnov.herokuapp.com/getVerse/${router.query.title}`
+                )
                 .then((response) => {
                     setVerse(response.data);
                 });
