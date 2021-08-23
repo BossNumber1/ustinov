@@ -2,6 +2,7 @@ import React from "react";
 import Router from "next/router";
 import AlbumPicture from "./AlbumPicture";
 import axios from "axios";
+import Loading from "../general/loader/Loading";
 // localhost: 80; --- www.ustinnov.herokuapp.com
 function Verses() {
     const [versesStore, setVersesStore] = React.useState(false);
@@ -34,7 +35,7 @@ function Verses() {
                     </div>
                 </>
             ) : (
-                "Loading..."
+                <Loading />
             )}
         </div>
     );
