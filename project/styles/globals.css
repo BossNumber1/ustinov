@@ -157,3 +157,17 @@ a {
 .videoBlock {
     margin-top: 30px;
 }
+
+.links {
+    display: flex;
+    margin: 12px 0 12px 5px;
+}
+
+.links > a {
+    margin-right: 12px;
+}
+
+.links img {
+    width: 32px;
+    height: 32px;
+}

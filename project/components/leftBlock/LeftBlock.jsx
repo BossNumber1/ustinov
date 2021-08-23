@@ -2,6 +2,7 @@ import React from "react";
 import eight from "../../pages/about/8.jpg";
 import signa from "../../pages/about/signa.jpg";
 import twit from "../../pages/twit.png";
+import Links from "../links/Links";
 
 function LeftBlock() {
     return (
@@ -16,6 +17,7 @@ function LeftBlock() {
                         zIndex: 2,
                     }}
                 />
+                <Links />
                 <img
                     src={eight}
                     alt="about_eight"

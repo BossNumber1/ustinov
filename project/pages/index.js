@@ -5,7 +5,6 @@ import LeftBlock from "../components/leftBlock/LeftBlock";
 import MainScreen from "../components/mainScreen/MainScreen";
 import Welcome from "../components/welcome/Welcome";
 import Video from "../components/video/Video";
-import Footer from "../components/footer/Footer";
 import Verses from "../components/isShowVerse/Verses";
 
 export default function Home() {
@@ -44,7 +43,6 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }
