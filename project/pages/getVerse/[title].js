@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import { MainLayout } from "../../components/MainLayout";
 import PostVerse from "../../components/isShowVerse/PostVerse";
+import Loading from "../../components/general/loader/Loading";
 
 function GetVerse() {
     const router = useRouter();
@@ -21,11 +22,15 @@ function GetVerse() {
 
     return (
         <MainLayout title={router.query.title}>
-            <PostVerse
-                title={verse.title}
-                verse={verse.content}
-                illustration={verse.illustration}
-            />
+            {verse ? (
+                <PostVerse
+                    title={verse.title}
+                    verse={verse.content}
+                    illustration={verse.illustration}
+                />
+            ) : (
+                <Loading getVerse="true" />
+            )}
         </MainLayout>
     );
 }
