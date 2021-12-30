@@ -6,6 +6,7 @@ import MainScreen from "../components/mainScreen/MainScreen";
 import Welcome from "../components/welcome/Welcome";
 import Video from "../components/video/Video";
 import Verses from "../components/isShowVerse/Verses";
+import logo from "./logo.jpg";
 
 export default function Home() {
     return (
@@ -17,7 +18,7 @@ export default function Home() {
                     content="Крепость независимости поэта"
                 />
                 <meta
-                    content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG"
+                    content={"https://ustinnov.ru" + logo}
                     property="og:image"
                 />
                 <link rel="icon" href="/favicon.ico" />
