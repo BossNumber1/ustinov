@@ -1,4 +1,5 @@
 import Loader from "react-loader-spinner";
+import Loader2 from "./Loader2";
 
 function Loading({ getVerse = false }) {
     if (getVerse === "true") {
@@ -16,13 +17,14 @@ function Loading({ getVerse = false }) {
                 }}
             >
                 {/* // style={{ textAlign: "center", top: "50%" }}> */}
-                <Loader
+                {/* <Loader
                     type="Hearts"
                     // type="TailSpin"
                     color="black"
                     height={160}
                     width={160}
-                />
+                /> */}
+                <Loader2 />
             </div>
         );
     }

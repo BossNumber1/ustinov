@@ -52,6 +52,9 @@ function LeftBlock() {
             <div className="twitIll">
                 <img src={twit} alt="post in twitter" />
             </div>
+            <div onClick={() => alert("photo")}>Фотографии</div>
+            <div>Видео</div>
+            <div>Песни</div>
         </>
     );
 }

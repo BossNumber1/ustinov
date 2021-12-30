@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../scss/style.css";
 
 function MyApp({ Component, pageProps }) {
     // debugger;

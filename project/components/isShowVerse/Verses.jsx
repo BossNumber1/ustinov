@@ -33,6 +33,13 @@ function Verses() {
                             title={versesStore[1].title}
                         />
                     </div>
+                    <div onClick={() => Router.push("/getVerse/third")}>
+                        <AlbumPicture
+                            id={versesStore[2].id}
+                            albumPicture={versesStore[2].illustration}
+                            title={versesStore[2].title}
+                        />
+                    </div>
                 </>
             ) : (
                 <Loading />

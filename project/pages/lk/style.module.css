@@ -1,0 +1,122 @@
+.appBody {
+    display: grid;
+    grid-template-areas: "leftB centerB rightB";
+    /* "footer footer"; */
+    grid-template-columns: 33% 33% 33%;
+    /* grid-auto-rows: minmax(20%, auto); */
+    grid-gap: 1em;
+}
+
+.leftB {
+    grid-area: leftB;
+    /* background-color: orange; */
+    /* display: block; */
+    text-align: center;
+    padding-top: 10px;
+}
+
+.centerB {
+    grid-area: centerB;
+    /* background-color: blue; */
+}
+
+.rightB {
+    grid-area: rightB;
+    /* background-color: orangered; */
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* //----- */
+
+.centerBody {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "message"
+        "titleForm"
+        "form";
+    /* grid-auto-rows: minmax(20%, auto); */
+    /* grid-auto-rows: minmax(66%, 330px, 33px); */
+    grid-gap: 0.5em;
+}
+
+.header {
+    grid-area: header;
+    /* background-color: rgb(85, 180, 93); */
+    padding: 14px 0;
+}
+
+.message {
+    grid-area: message;
+    /* background-color: rgb(255, 115, 0); */
+    height: 42.7px;
+    padding-left: 40px;
+    /* padding-top: 50px; */
+    /* padding: 3px 0 50px 0; */
+    /* position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.titleForm {
+    grid-area: titleForm;
+    /* background-color: rgb(85, 180, 93); */
+    height: 30px;
+    text-align: center;
+    /* padding: 14px 0; */
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form {
+    grid-area: form;
+    /* background-color: rgb(0, 255, 242); */
+    padding: 10px 0 10px 85px;
+}
+
+.sendBtn {
+    margin-top: 10px;
+}
+
+.sendBtn > input {
+    border-radius: 7px;
+    background-color: rgb(228, 200, 148);
+    color: rgb(139, 91, 1);
+    border: 1px solid rgb(219, 175, 93);
+    font-size: 14.5px;
+}
+
+.sendBtn > input:hover {
+    transform: scale(1.2);
+    transition-duration: 1.5s;
+}
+
+.sendSuccess {
+    margin: 10px 0 0 30px;
+    color: rgb(139, 91, 1);
+    font-size: 14.5px;
+    margin-right: 30px;
+}
+
+.saveBtn {
+    margin-left: 45px;
+}
+
+.saveBtn button {
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.forma textarea,
+.forma input {
+    width: 188px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.answer div {
+    margin-left: 30px;
+    color: brown;
+}
